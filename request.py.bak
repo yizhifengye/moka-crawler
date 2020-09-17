@@ -1,0 +1,13 @@
+import requests
+# use headers
+request_headers={}
+url='https://app.mokahr.com/api/user/recommendation/applications?'
+page=2
+for page in range(0, 18):
+    s=requests.session()
+    r=s.get(url,params={'page':page},headers=request_headers)
+    print(r.text)
+
+    filename='/Users/chenry/workspace/goproject/antia/fun/text'
+    with open(filename,'a') as f:
+        f.write(r.text)
