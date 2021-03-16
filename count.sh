@@ -6,4 +6,5 @@ grep -o 'status":"HR面试' text | wc -l
 grep -o 'status":"pending' text | wc -l
 grep -o 'status":"暂不匹配' text | wc -l
 grep -o 'status":"沟通offer' text | wc -l
-grep -o '.\{162\}status":"沟通offer.\{148\}' text
+grep -o 'status":"offer环节' text | wc -l
+grep -o '.\{162\}status":"offer环节.\{148\}' text
