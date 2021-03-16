@@ -8,3 +8,4 @@ grep -o 'status":"暂不匹配' text | wc -l
 grep -o 'status":"沟通offer' text | wc -l
 grep -o 'status":"offer环节' text | wc -l
 grep -o '.\{162\}status":"offer环节.\{148\}' text
+test
